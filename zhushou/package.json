@@ -1,0 +1,29 @@
+{
+  "name": "green-energy-blockchain-mvp",
+  "version": "1.0.0",
+  "description": "Trustworthy green-energy data sharing MVP with blockchain provenance and climate-AI analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "keywords": [
+    "blockchain",
+    "climate",
+    "green-energy",
+    "ipfs",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0"
+  }
+}
+

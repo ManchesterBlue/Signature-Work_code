@@ -1,0 +1,50 @@
+# Data schema for climate indicators
+# Defines expected structure and types for validation
+
+indicators:
+  file: indicators.csv
+  columns:
+    - name: country
+      type: string
+      required: true
+    - name: year
+      type: integer
+      required: true
+      range: [2000, 2030]
+    - name: renewable_share
+      type: float
+      required: true
+      range: [0, 100]
+      unit: percent
+    - name: co2_per_capita
+      type: float
+      required: true
+      range: [0, 50]
+      unit: metric_tons
+    - name: installed_capacity
+      type: float
+      required: true
+      range: [0, 1000000]
+      unit: megawatts
+
+policies:
+  directory: policies/
+  file_pattern: "*.pdf"
+  metadata:
+    - name: country
+      type: string
+      required: true
+    - name: year
+      type: integer
+      required: true
+    - name: policy_type
+      type: string
+      required: false
+
+# Output specifications
+output:
+  artifacts_index: output/artifacts_index.csv
+  tx_log: output/tx_log.csv
+  policy_features: output/policy_features.csv
+  cleaned_data: output/cleaned_indicators.csv
+

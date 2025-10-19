@@ -1,0 +1,26 @@
+Green Energy Blockchain MVP
+Copyright 2025
+
+This software is licensed under the MIT License.
+
+DATA LICENSE NOTICES:
+=====================
+
+The sample data included in this repository (/data_sample/) is provided for
+demonstration purposes only. Users must comply with the original data licenses:
+
+1. Indicators data: Demo/synthetic data for illustration purposes.
+   For production use, obtain data from official sources (e.g., IEA, World Bank)
+   and comply with their respective licenses.
+
+2. Policy documents: Demo documents for illustration purposes.
+   For production use, obtain documents from official government sources
+   and comply with their respective copyright and usage terms.
+
+THIRD-PARTY DEPENDENCIES:
+=========================
+
+This project uses various open-source libraries. See package.json and
+requirements.txt for full dependency lists. Each dependency is subject
+to its own license terms.
+
